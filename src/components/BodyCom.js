@@ -1,11 +1,11 @@
 import React from "react";
 import Sidebar from "./Sidebar";
-import MainContainer from "./MainContanier";
+import { Outlet } from "react-router-dom";
 const BodyCom = () => {
     return(
         <div className="flex gap-8">
         <Sidebar/>
-        <MainContainer/>
+        <Outlet/>
         </div>
     )
 }
